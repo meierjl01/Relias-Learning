@@ -4,7 +4,4 @@ import router from './router';
 
 const container = document.getElementById('container');
 
-
-
-
 ReactDom.render(router, container);
