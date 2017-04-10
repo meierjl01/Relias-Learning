@@ -5,7 +5,7 @@ import SearchList from './searchlist';
 export default React.createClass({
   getInitialState() {
     return {
-      movies: []
+      movies: [{movie: {}}]
     }
   },
   componentDidMount() {
@@ -21,7 +21,7 @@ export default React.createClass({
           <input ref="title" type="text" placeholder="Movie Title" />
           <input type="submit" value="Search" />
         </form>
-        <SearchList movies={this.state.movies}/>
+        <SearchList movies={this.state.movies[0]}/>
       </div>
     )
   },
