@@ -5,17 +5,17 @@ import Movie from '../models/movie';
 export default Backbone.Collection.extend ({
   model: Movie,
 
-  //        url: 'http://www.omdbapi.com/?',
-
-  // getMovies(title) {
-  //     $.ajax({
-  //         url: 'http://www.omdbapi.com/?t=fight+club',
-  //         data: {
-  //             s: title,
-  //         },
-  //         success: (response) => {
-  //           console.log(response);
-  //         }
-  //     });
-  // }
+  getMovies(title) {
+      $.ajax({
+          url: 'http://www.omdbapi.com/?',
+          data: {
+              t: title,
+          },
+          success: (data) => {
+            // console.log(data);
+            this.reset();
+            this.add(data);
+          }
+      });
+  }
 })
