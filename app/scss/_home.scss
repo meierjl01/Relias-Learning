@@ -24,12 +24,13 @@ body {
       margin: .5em;
   }
 
-  #search-area {
+  #search-input {
       width: 25%;
   }
 
   #search-submit {
     background: $color-tertiary;
+    cursor: hand;
   }
 
 }

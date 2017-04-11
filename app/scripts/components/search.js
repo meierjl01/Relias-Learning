@@ -1,6 +1,7 @@
 import React from 'react';
 import store from '../store';
 import SearchList from './searchlist';
+import Info from './info';
 
 export default React.createClass({
   getInitialState() {
@@ -17,12 +18,13 @@ export default React.createClass({
     // console.log(this.state.movies);
     return (
       <div>
-        <h2>Search for a movie here:</h2>
+        <h2>Welcome to Movie Search!</h2>
         <form onSubmit={this.handleSearch}>
-          <input id="search-area" ref="title" type="text" placeholder="Movie Title" />
+          <input id="search-input" ref="title" type="text" placeholder="Movie Title" />
           <input id="search-submit" type="submit" value="Search" />
         </form>
-        <SearchList movies={this.state.movies[0]}/>
+          <Info />
+          <SearchList movies={this.state.movies[0]}/>
       </div>
     )
   },
