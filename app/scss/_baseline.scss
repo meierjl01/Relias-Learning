@@ -1,0 +1,35 @@
+body {
+  background-color: $color-primary;
+  color: $color-secondary;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+
+  #header {
+    background: url("https://cdn.shutterstock.com/shutterstock/videos/1581349/thumb/1.jpg") no-repeat center center;
+    background-size: cover;
+    height: 17em;
+  }
+
+  #movie-list {
+    list-style-type: none;
+  }
+
+  input {
+      outline: none;
+      text-align: center;
+      font-family: 'Quicksand', sans-serif;
+      color: $color-secondary;
+      border: 1px $color-secondary solid;
+      padding: 1em;;
+      margin: .5em;
+  }
+
+  #search-area {
+      width: 25%;
+  }
+
+  #search-submit {
+    background: $color-tertiary;
+  }
+
+}

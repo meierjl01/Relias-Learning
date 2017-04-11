@@ -17,9 +17,10 @@ export default React.createClass({
     // console.log(this.state.movies);
     return (
       <div>
+        <h2>Search for a movie here:</h2>
         <form onSubmit={this.handleSearch}>
-          <input ref="title" type="text" placeholder="Movie Title" />
-          <input type="submit" value="Search" />
+          <input id="search-area" ref="title" type="text" placeholder="Movie Title" />
+          <input id="search-submit" type="submit" value="Search" />
         </form>
         <SearchList movies={this.state.movies[0]}/>
       </div>
