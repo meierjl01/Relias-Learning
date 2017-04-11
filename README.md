@@ -1,4 +1,4 @@
-#Relias Learning Assessment: Movie Search
+# Relias Learning Assessment: Movie Search
 I used a build tool from The Iron Yard to work on this assignment. Some of the information about it is below.
 
 For this project, I used React components and Backbone collections (Movies) and models (Movie). My code can be found in the app folder. I worked with the OMBd API and also included promises for the AJAX request to this API. The AJAX request is done in the Movies Collection.
