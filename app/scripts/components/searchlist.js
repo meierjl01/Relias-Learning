@@ -11,7 +11,8 @@ export default React.createClass({
       pic = <div></div>
     }
     return (
-      <ul id="movie-list">
+      <ul>
+        <li id="error">{this.props.movies.Error}</li>
         {pic}
         <li>{this.props.movies.Title}</li>
         <li>{this.props.movies.Rated}</li>

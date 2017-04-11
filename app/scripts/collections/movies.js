@@ -16,6 +16,15 @@ export default Backbone.Collection.extend ({
             this.reset();
             this.add(data);
           }
-      });
+      })
+      .then(function(data) {
+        console.log(data);
+      })
+      .fail(function() {
+        console.log("something went wrong");
+      })
+      .done(function() {
+        console.log("it's finished");
+      })
   }
 })

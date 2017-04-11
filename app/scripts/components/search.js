@@ -23,8 +23,10 @@ export default React.createClass({
           <input id="search-input" ref="title" type="text" placeholder="Movie Title" />
           <input id="search-submit" type="submit" value="Search" />
         </form>
-          <Info />
-          <SearchList movies={this.state.movies[0]}/>
+          <div id="movie-list">
+            <Info />
+            <SearchList movies={this.state.movies[0]}/>
+          </div>
       </div>
     )
   },

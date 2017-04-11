@@ -4,7 +4,7 @@ export default React.createClass({
   render() {
     return (
       <div>
-        Search for a movie.
+        Movie Search makes it easy to search for information about your favorite movies.
       </div>
     )
   }
