@@ -11,15 +11,17 @@ export default React.createClass({
       pic = <div></div>
     }
     return (
-      <ul>
-        <li id="error">{this.props.movies.Error}</li>
-        {pic}
-        <li>{this.props.movies.Title}</li>
-        <li>{this.props.movies.Rated}</li>
-        <li>{this.props.movies.Genre}</li>
-        <li>{this.props.movies.Runtime}</li>
-        <li>{this.props.movies.Plot}</li>
-      </ul>
+      <div>
+        <div id="error">{this.props.movies.Error}</div>
+        <ul>
+          {pic}
+          <li>{this.props.movies.Title}</li>
+          <li>{this.props.movies.Rated}</li>
+          <li>{this.props.movies.Genre}</li>
+          <li>{this.props.movies.Runtime}</li>
+          <li>{this.props.movies.Plot}</li>
+        </ul>
+      </div>
     )
   }
 });

@@ -21,11 +21,12 @@ body {
       color: $color-secondary;
       border: 1px $color-secondary solid;
       padding: 1em;;
-      margin: .5em;
+      margin-bottom: 2.5em;
   }
 
   #search-input {
       width: 25%;
+      margin-right: .5em;
   }
 
   #search-submit {
